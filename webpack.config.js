@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: "none",
   entry: "./src/app.js",
   output: {
     path: path.join(__dirname, "public"),
@@ -15,7 +16,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
