@@ -83,6 +83,7 @@ class IndecisionApp extends React.Component {
         </div>
 
         <OptionModal
+          ariaHideApp={false}
           handleCloseModal={this.handleCloseModal}
           selectedOption={this.state.selectedOption}
         />
